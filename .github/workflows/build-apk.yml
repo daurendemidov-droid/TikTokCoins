@@ -1,6 +1,7 @@
 name: Build TikTok Coins Demo APK
 
 on:
+  push:
   workflow_dispatch:
 
 jobs:
