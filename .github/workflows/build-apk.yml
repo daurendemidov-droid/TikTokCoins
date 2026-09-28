@@ -192,7 +192,7 @@ jobs:
         with:
           gradle-version: '8.10'
 
-       -     name: Build APK
+                 - name: Build APK
                  run: gradle -Pandroid.useAndroidX=true -Pandroid.enableJetifier=true --no-daemon :app:assembleDebug
 
       - name: Upload APK
