@@ -192,8 +192,8 @@ jobs:
         with:
           gradle-version: '8.10'
 
-      - name: Build APK
-        run: gradle --no-daemon :app:assembleDebug
+       -     name: Build APK
+                 run: gradle -Pandroid.useAndroidX=true -Pandroid.enableJetifier=true --no-daemon :app:assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
